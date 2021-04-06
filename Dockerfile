@@ -8,7 +8,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 USER argocd
-
 ARG GCS_PLUGIN_VERSION="0.3.9"
 ARG GCS_PLUGIN_REPO="https://github.com/hayorov/helm-gcs.git"
 RUN helm plugin install ${GCS_PLUGIN_REPO} --version ${GCS_PLUGIN_VERSION}
