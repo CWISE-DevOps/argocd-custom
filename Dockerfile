@@ -1,4 +1,4 @@
-FROM argoproj/argocd:v2.1.6
+FROM argoproj/argocd:v2.2.3
 
 USER root
 RUN apt-get update && \
