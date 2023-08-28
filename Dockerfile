@@ -1,4 +1,4 @@
-FROM argoproj/argocd:v2.8.2
+FROM quay.io/argoproj/argocd:v2.8.2
 USER root
 RUN apt-get update && \
     echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list && \
